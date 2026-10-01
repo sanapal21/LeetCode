@@ -1,2 +1,3 @@
 # LeetCode
-LeetCode solutions for DSA and coding interview preparation.
+
+My LeetCode solutions for Data Structures and Algorithms and coding interview preparation.
