@@ -14,7 +14,6 @@ class Solution {
         boolean[][] pacific = new boolean[m][n];
         boolean[][] atlantic = new boolean[m][n];
 
-        // Start DFS from Pacific borders
         for (int c = 0; c < n; c++) {
             dfs(0, c, heights, pacific);
         }
@@ -23,7 +22,6 @@ class Solution {
             dfs(r, 0, heights, pacific);
         }
 
-        // Start DFS from Atlantic borders
         for (int c = 0; c < n; c++) {
             dfs(m - 1, c, heights, atlantic);
         }
@@ -32,7 +30,6 @@ class Solution {
             dfs(r, n - 1, heights, atlantic);
         }
 
-        // Find cells reachable from both oceans
         List<List<Integer>> result = new ArrayList<>();
 
         for (int r = 0; r < m; r++) {
